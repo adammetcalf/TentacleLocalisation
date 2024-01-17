@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "digikey-footprints")(type "KiCad")(uri "C:/Users/bsgx043/Desktop/PCB Design/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
+  (lib (name "LSM6DS3")(type "KiCad")(uri "C:/Users/bsgx043/Desktop/PCB Design/LSM6DS3")(options "")(descr ""))
+  (lib (name "components")(type "KiCad")(uri "C:/Users/bsgx043/Desktop/PCB Design/KiCad-Libraries/components")(options "")(descr ""))
+)
