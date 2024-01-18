@@ -1,0 +1,17 @@
+There are a number of separate bits of code in control of this project. An order of operations exists for testing.
+
+1.	I2CScanner: A simple bit of Arduino code which polls the I2C line to see if it can find addresses. We are specifically looking for 4 sensors with the addresses //0x0C //0x0D //0x0E //0x0F. 
+
+2.	3DHallEffectCheck: A simple bit of Arduino code that checks whether we can read the sensors using the Wire.h library for I2C, and outputting to Serial, to be viewed using Serial Monitor.
+
+3.	Final_HES_with_Serial: A complex bit of Arduino Code, using the i2c_t3.h library to exploit the 2 I2C lines on the teensy. Full functionality, but also outputting to Serial, to be viewed using Serial Monitor.
+
+4.	Final_HES: The final Arduino code, to be deployed and used solely for communicating with myRIO via I2C.
+
+
+Arduino Code.
+Each sensor provides 7 bytes of data:
+status, xMag msb, xMag lsb, yMag msb, yMag lsb, zMag msb, zMag lsb
+Recombined msb and lsb, each axis has the following upper limit, with the lower limit = 0:
+11111111:11111111 = 65535
+Transfer array consists of 24 bytes (4 sensors * 6 bytes each).

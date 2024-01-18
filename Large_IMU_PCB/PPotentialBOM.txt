@@ -1,1 +1,4 @@
 Molex 0.25mm pitch cable: https://uk.rs-online.com/web/p/ribbon-cable/2098906
+
+IMU: https://www.mouser.co.uk/ProductDetail/STMicroelectronics/LSM6DSRTR?qs=vLWxofP3U2yp6%252BOD3KzrKQ%3D%3D
+
